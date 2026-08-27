@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aun Ali Kazi | AI &amp; Data Engineer</title>
+<meta name="description" content="Portfolio of Aun Ali Kazi, AI/ML Engineer, Data Analyst, and Full Stack Developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="grain"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">AAK<span class="cursor">_</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">let's talk</a>
+    <button id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow mono" id="typed-eyebrow"></p>
+      <h1 class="hero-title">
+        Aun Ali Kazi builds<br>
+        systems that <span class="text-gradient">turn data</span><br>
+        into <span class="text-gradient-alt">decisions</span>.
+      </h1>
+      <p class="hero-sub">
+        AI/ML Engineer, Data Analyst, and Full Stack Developer based in Karachi, Pakistan.
+        I train predictive models, wire agentic pipelines, and ship full stack products end to end.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary magnetic">View projects</a>
+        <a href="#contact" class="btn btn-ghost magnetic">Get in touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">shipped projects</span></div>
+        <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">years in data and AI</span></div>
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">certifications</span></div>
+      </div>
+    </div>
+    <div class="scroll-cue mono">scroll<span class="scroll-line"></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">// about</p>
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="section-title">From spreadsheets to<br>autonomous systems.</h2>
+          <p>
+            I graduated with a BS in Artificial Intelligence from FAST NUCES Karachi, and my
+            work sits across three connected roles: Data Analyst, AI/ML Engineer, and Full Stack
+            Developer. My path started in raw data, cleaning it, modeling it, and reporting it,
+            and has grown into building the systems that reason over it: retrieval pipelines,
+            multi agent workflows, and the full stack products that put them in front of real
+            users.
+          </p>
+          <p>
+            As a Data Analyst I turn messy spreadsheets into dashboards stakeholders actually
+            trust. As an AI/ML Engineer I design RAG pipelines and agentic systems that stay
+            fast and reliable under real constraints, not just in a notebook. As a Full Stack
+            Developer I take those systems from a first prototype to a product people can
+            actually open and use. I like problems that sit at the seam between these
+            disciplines, and I'm comfortable owning a project from a raw CSV all the way to a
+            production deploy.
+          </p>
+          <div class="about-focus">
+            <div class="focus-item">
+              <span class="focus-tag mono">01</span>
+              <div><strong>Data &amp; Analytics</strong><span>SQL, Power BI, DAX, statistical modeling, data cleaning</span></div>
+            </div>
+            <div class="focus-item">
+              <span class="focus-tag mono">02</span>
+              <div><strong>AI / ML Engineering</strong><span>RAG pipelines, agentic reasoning, LLM tooling, LangGraph orchestration, multi agent systems</span></div>
+            </div>
+            <div class="focus-item">
+              <span class="focus-tag mono">03</span>
+              <div><strong>Full Stack Development</strong><span>React, FastAPI, Django, MongoDB, HTML, CSS, JavaScript</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="node-card mono" id="graph-card">
+            <div class="node-card-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="node-card-title">pipeline.status</span>
+            </div>
+            <canvas id="node-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">// experience</p>
+      <h2 class="section-title">Where I've worked.</h2>
+
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Data Science Intern</h3>
+              <span class="timeline-date mono">May 2026 to Jun 2026</span>
+            </div>
+            <p class="timeline-org">DevelopersHub Corporation · Karachi (Remote)</p>
+            <ul class="timeline-list">
+              <li>Performed exploratory data analysis on three separate client datasets (Iris, banking, insurance), identifying key variables and data quality issues before modeling.</li>
+              <li>Built and evaluated predictive models for loan approval, customer churn, and insurance cost analysis using regression and classification techniques.</li>
+              <li>Cleaned and preprocessed raw data using Python and Pandas, improving downstream model accuracy and reducing manual rework.</li>
+              <li>Evaluated model performance using Accuracy, MAE, RMSE, and Confusion Matrix, documenting results in plain language for stakeholders outside the technical team.</li>
+              <li>Maintained clean, versioned project repositories on GitHub to support handoff, reproducibility, and team collaboration.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Data Analyst &amp; Administrator</h3>
+              <span class="timeline-date mono">Aug 2024 to May 2026</span>
+            </div>
+            <p class="timeline-org">SIAL Corporation · Karachi</p>
+            <ul class="timeline-list">
+              <li>Collected, cleaned, and structured organizational data from multiple sources, improving accuracy and consistency for downstream reporting.</li>
+              <li>Analyzed datasets to identify patterns, trends, and performance insights that informed business decisions.</li>
+              <li>Built recurring dashboards and reports in Excel and Power BI, shortening the time stakeholders spent reviewing performance data.</li>
+              <li>Performed data validation and quality checks, catching and correcting structural inconsistencies across shared datasets.</li>
+              <li>Collaborated with teams across the company to translate raw data findings into two concrete process recommendations, both adopted by the team lead.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Editorial Intern</h3>
+              <span class="timeline-date mono">Jul 2025 to Aug 2025</span>
+            </div>
+            <p class="timeline-org">Press Network of Pakistan · Karachi</p>
+            <ul class="timeline-list">
+              <li>Authored and published letters to the editor on current affairs, applying the Global Charter of Ethics for Journalists.</li>
+              <li>Assisted in preparing, editing, and publishing media content under supervision, strengthening written communication and attention to detail.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">// projects</p>
+      <h2 class="section-title">Things I've built.</h2>
+      <p class="section-lead">A mix of AI and agentic systems, data pipelines, and full stack products, from technical assessments to systems built for real use.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card featured tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">AI · MULTI AGENT</span>
+            <h3>InsightDesk</h3>
+          </div>
+          <p>A multi agent business analytics assistant, orchestrating a SQL and data agent alongside an insight and reporting agent, purpose built to close the gap toward AI Agent Engineer work.</p>
+          <ul class="tag-list">
+            <li>LangGraph</li><li>Groq / Llama 3.3 70B</li><li>Render Postgres</li><li>Langfuse</li>
+          </ul>
+        </article>
+
+        <article class="project-card featured tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">AI · VOICE AGENT</span>
+            <h3>Voice AI Patient Registration System</h3>
+          </div>
+          <p>A phone based voice agent that registers patients end to end, with the live phone number itself serving as the review interface for the technical assessment.</p>
+          <ul class="tag-list">
+            <li>Vapi</li><li>FastAPI</li><li>PostgreSQL</li><li>Render</li><li>ElevenLabs TTS</li><li>Deepgram STT</li><li>GPT 4.1</li>
+          </ul>
+          <p class="project-meta mono">12 passing pytest tests, deployed and complete</p>
+        </article>
+
+        <article class="project-card featured tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">AI · AGENTIC RAG</span>
+            <h3>Pulse AI</h3>
+          </div>
+          <p>Started as a CoinGecko crypto dashboard, then extended into a full ReAct agentic system with a custom lexical RAG engine, rebuilt from ChromaDB and PyTorch after hitting Vercel's 500MB bundle limit.</p>
+          <ul class="tag-list">
+            <li>ReAct loop</li><li>Groq / Llama 3.3 70B</li><li>Custom BM25 style RAG</li><li>Vercel + CI/CD</li>
+          </ul>
+          <p class="project-meta mono">redesigned under a hard deployment constraint</p>
+        </article>
+
+        <article class="project-card tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">ML · REGRESSION</span>
+            <h3>Freight Rate Prediction Pipeline</h3>
+          </div>
+          <p>A Spotter technical assessment: predicting freight rates across 12,000 validation loads with careful feature engineering and model selection.</p>
+          <ul class="tag-list">
+            <li>CatBoost</li><li>5 fold CV</li><li>Feature engineering</li><li>Median imputation</li>
+          </ul>
+          <p class="project-meta mono">CatBoost chosen over Linear Regression and Random Forest, lowest MAE/RMSE, highest R2</p>
+        </article>
+
+        <article class="project-card tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">ANALYTICS · POWER BI</span>
+            <h3>Retail Sales Intelligence Dashboard</h3>
+          </div>
+          <p>A five page Power BI dashboard built from the Kaggle Superstore dataset, the project that became his entry point into Power BI and professional analytics workflows.</p>
+          <ul class="tag-list">
+            <li>Power BI</li><li>8 DAX measures</li><li>33 engineered columns</li><li>Python</li>
+          </ul>
+        </article>
+
+        <article class="project-card tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">FULL STACK · ECOMMERCE</span>
+            <h3>Soleline</h3>
+          </div>
+          <p>A full stack shoe ecommerce platform with role based access and safe, transaction protected inventory updates.</p>
+          <ul class="tag-list">
+            <li>FastAPI</li><li>MongoDB / Motor</li><li>React</li><li>Tailwind</li><li>JWT</li>
+          </ul>
+          <p class="project-meta mono">atomic stock deduction via MongoDB transactions</p>
+        </article>
+
+        <article class="project-card tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">FULL STACK · SOCIAL</span>
+            <h3>Threadline</h3>
+          </div>
+          <p>A social media application with automated deployment and cloud hosted media handling.</p>
+          <ul class="tag-list">
+            <li>Django REST Framework</li><li>React</li><li>GitHub Actions CI/CD</li><li>Cloudinary</li>
+          </ul>
+        </article>
+
+        <article class="project-card tilt">
+          <div class="project-top">
+            <span class="project-kicker mono">FULL STACK · LOGISTICS</span>
+            <h3>ELD Trip Planner</h3>
+          </div>
+          <p>A trip planning tool with a Django DRF backend and a React/TypeScript frontend, taken from local development through to a stable production deploy.</p>
+          <ul class="tag-list">
+            <li>Django REST Framework</li><li>React / TypeScript</li><li>PostgreSQL</li><li>Render + Vercel</li>
+          </ul>
+          <p class="project-meta mono">resolved CORS, CSRF, env config, and SQLite to Postgres migration</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">// skills</p>
+      <h2 class="section-title">What I work with.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="mono">languages &amp; data</h3>
+          <ul>
+            <li>Python</li><li>SQL</li><li>Power BI / DAX</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">ai / ml</h3>
+          <ul>
+            <li>LLM tooling</li><li>RAG pipelines</li><li>Agentic reasoning</li><li>LangGraph orchestration</li><li>Multi agent systems</li><li>Prompt engineering</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">full stack</h3>
+          <ul>
+            <li>React</li><li>FastAPI</li><li>Django</li><li>MongoDB</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="mono">certifications</h3>
+          <ul>
+            <li>SQL Basic, Intermediate, and Advanced, HackerRank</li>
+            <li>Problem Solving (Intermediate), HackerRank</li>
+            <li>Data Science and Analytics, DevelopersHub</li>
+            <li>Microsoft Excel Advanced, 99th percentile</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">// contact</p>
+      <h2 class="section-title">Let's build something.</h2>
+      <p class="section-lead">
+        Open to Data Analyst, AI/ML Engineer, Data Science, and Full Stack roles, remote or based in Pakistan.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:aunnaeem52@gmail.com" class="btn btn-primary magnetic">aunnaeem52@gmail.com</a>
+        <a href="https://linkedin.com/in/aunalikazi" class="btn btn-ghost magnetic" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/aun60" class="btn btn-ghost magnetic" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="mono">© 2026 Aun Ali Kazi. Built with intent, not a template.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
